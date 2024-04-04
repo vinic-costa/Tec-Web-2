@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Produtos</title>
+        <meta charset="utf-8">
+        <meta name = "format-detection" content = "telephone=no" />
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-migrate-1.1.1.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/camera2.js"></script>
+        <script src="js/jquery.ui.totop.js"></script>
+       <!--<![endif]--> 
+        <!-- font-awesome font -->
+       <link rel="stylesheet" href="fontawesome/css/all.css">
+       <link rel="stylesheet" href="./css/styleproduct.css">
+       <!-- end font-awesome font -->
+         <script>
+           jQuery
+           $(window).load(function(){
+               jQuery('#camera').camera({
+   
+                   loader: true,
+                   pagination: false,
+                   thumbnails: false,
+                   transPeriod: 2000, 
+                   height: '39.9%',
+                   caption: false,
+                   navigation: false,
+                   fx: 'simpleFade',
+                   autoAdvance: true
+   
+               });
+   
+               $('.block_1 .button1').hover(function()
+                   {
+                       $(this).parent().find('.block_num').animate({'color':'#fff'});
+                       $(this).parent().find('h5').animate({'color':'#eada51'});
+                       $(this).parent().find('p').animate({'color':'#fff'});          
+                   }, function(){
+                       $(this).parent().find('.block_num').animate({'color':'#4c4b4b'});
+                       $(this).parent().find('h5').animate({'color':'#fff'});
+                       $(this).parent().find('p').animate({'color':'#4c4b4b'});
+                   });
+   
+                $('.block_3 .button1').hover(function()
+                   {
+                       $(this).parent().find('.block_letter').animate({'color':'#fff'});
+                       $(this).parent().parent().find('.icon').animate({'backgroundColor':'#eada51'});
+                       $(this).parent().parent().find('.icon div').animate({'color':'#fff'});          
+                   }, function(){
+                       $(this).parent().find('.block_letter').animate({'color':'#4c4b4b'});
+                       $(this).parent().parent().find('.icon').animate({'backgroundColor':'#1f1f1f'});
+                       $(this).parent().parent().find('.icon div').animate({'color':'#4c4b4b'});
+                   })
+   
+           });     
+           jQuery(function(){
+               $().UItoTop({ easingType: 'easeOutQuart' });
+               $(".top_arr").click(function(){
+                   $('body, html').stop().animate({'scrollTop': 0}); 
+               });
+           });     
+       </script>
+        <!--<![endif]-->
+        <!--[if lt IE 8]>
+          <div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+              <img src="http://storage.ie6countdown.com/assets/100/img/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+            </a>
+         </div>
+       <![endif]-->
+       <!--[if lt IE 9]>
+              <script src="js/html5shiv.js"></script>
+           <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+       <![endif]-->
+        </head>
+        <body>
+   <!--==============================header=================================-->
+   <header>
+    <div class="banner-topo">
+        <img name="slide" style="height:600px; width: 100%;">
+          </div>
+          <a class="prev" onClick="prevImg()">&#10094;</a>
+          <a class="next" onClick="nextImg()">&#10095;</a>
+          <br/>
+           <div class="logoHolder">
+               <div class="container_12">
+                   <div class="grid_12 text_center marg_1">
+                       <h1><a class="logo" href="index.html"><img src="img/logo.png" alt=""></a> </h1>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div class="container_12">
+           <div class="grid_12">
+               <div class="menuHolder">
+                   <nav>
+                       <ul class="sf-menu">
+                           <li><a href="index.html">Início</a></li>
+                           <li class="current"><a href="produtos.html">Produtos</a>
+                           </li>
+                           <li><a href="depoimentos.html">Depoimentos</a></li>
+                       </ul>
+                   </nav>
+               </div>
+           </div>
+       </div>
+   </header>
+<!--=======content================================-->
+<section id="content">
+    <div class="container_12">
+        <div class="grid_12 marg_10">
+            <h3 class="marg_9">PROMOÇÕES</h3>
+            <div class="grid_4 alpha">
+                <div class="block_8 maxheight2">
+                    <figure class="figure"><a class="magnifier" href="./img/produto1.jpg"><img alt="" src="./img/produto1.jpg"></a></figure>
+                    <div class="caption_1">
+                        <h5><a href="#" class="link_1 animate">Action Figure Zoro</a></h5>
+                        <p>Esta figura tem cerca de 17cm de altura. Feita de PVC de alta qualidade.</p>
+                        <a class="button1" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="block_8 maxheight2">
+                    <figure class="figure"><a class="magnifier" href="./img/produto2.jpg"><img alt="" src="./img/produto2.jpg"></a></figure>
+                    <div class="caption_1">
+                        <h5><a href="#" class="link_1 animate">Action Figure Luffy</a></h5>
+                        <p>Esta figura tem cerca de 17cm de altura. Feita de PVC de alta qualidade.</p>
+                        <a class="button1" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_4 omega">
+                <div class="block_8 maxheight2">
+                    <figure class="figure"><a class="magnifier" href="./img/produto3.jpg"><img alt="" src="./img/produto3.jpg"></a></figure>
+                    <div class="caption_1">
+                        <h5><a href="#" class="link_1 animate">Action Figure Luffy e Shanks</a></h5>
+                        <p>Tem 18cm de altura. Feita de PVC.</p>
+                        <a class="button1" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="grid_4 alpha">
+                <div class="block_8 maxheight2">
+                    <figure class="figure"><a class="magnifier" href="./img/produto4.jpg"><img alt="" src="./img/produto4.jpg"></a></figure>
+                    <div class="caption_1">
+                        <h5><a href="#" class="link_1 animate">Action Figure Zoro (Wano)</a></h5>
+                        <p>Com 20 cm de altura; Modelo de PVC, realista e com alta redução de tamanho.</p>
+                        <a class="button1" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="block_8 maxheight2">
+                    <figure class="figure"><a class="magnifier" href="./img/produto5.jpg"><img alt="" src="./img/produto5.jpg"></a></figure>
+                    <div class="caption_1">
+                        <h5><a href="#" class="link_1 animate">Action Figure Sanji</a></h5>
+                        <p>Série: One Piece; Personagem: Sanji; Material: PVC; Figura não articulada.</p>
+                        <a class="button1" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_4 omega">
+                <div class="block_8 maxheight2">
+                    <figure class="figure"><a class="magnifier" href="./img/produto6.jpg"><img alt="" src="./img/produto6.jpg"></a></figure>
+                    <div class="caption_1">
+                        <h5><a href="#" class="link_1 animate">Action Figure Tanjiro</a></h5>
+                        <p>Esta figura tem cerca de 16 cm de altura; Feita de PVC de alta qualidade.</p>
+                        <a class="button1" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="grid_4 alpha">
+                <div class="block_8 maxheight2">
+                    <figure class="figure"><a class="magnifier" href="./img/produto7.jpg"><img alt="" src="./img/produto7.jpg"></a></figure>
+                    <div class="caption_1">
+                        <h5><a href="#" class="link_1 animate">Action Figure Inosuke</a></h5>
+                        <p>Esta figura tem cerca de 16 cm de altura. Feita de PVC de alta qualidade.</p>
+                        <a class="button1" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_4">
+                <div class="block_8 maxheight2">
+                    <figure class="figure"><a class="magnifier" href="./img/produto8.jpg"><img alt="" src="./img/produto8.jpg"></a></figure>
+                    <div class="caption_1">
+                        <h5><a href="#" class="link_1 animate">Action Figure Zenitsu</a></h5>
+                        <p>Esta figura tem cerca de 30cm de altura. Feita de PVC de alta qualidade.</p>
+                        <a class="button1" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_4 omega">
+                <div class="block_8 maxheight2">
+                    <figure class="figure"><a class="magnifier" href="./img/produto9.jpg"><img alt="" src="./img/produto9.jpg"></a></figure>
+                    <div class="caption_1">
+                        <h5><a href="#" class="link_1 animate">Action Figure Tomioka</a></h5>
+                        <p>Esta figura tem cerca de 16cm de altura; Feita de PVC de alta qualidade.</p>
+                        <a class="button1" href="#">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=======footer=================================-->
+<!-- SECTION FOOTER -->
+<footer>
+    <div class="container-footer">
+        <div class="footer">
+            <div class="option">
+                <ul>
+                    <strong><h3><li><a href="#">Geek Center Sobral</a></li></h3></strong>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Termos de serviço</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Cancelamento, troca e rembolso</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <p>Newsletter</p>
+                    <input type="text" placeholder="Digite seu melhor e-mail"><button
+                        type="submit">Inscrever</button>
+            </div>
+        </div>
+        <div style="border-bottom: 1px solid #A5A1A1;"></div>
+        <div class="informations">
+            <div class="rede-social">
+                <img src="img/instagram.png" alt="logo instagram">
+                <img src="img/facebook.png" alt="logo facebook">
+            </div>
+            <div class="buy">
+                <img src="img/mastercard.png" alt="logo mastercard">
+                <img src="img/paypal.png" alt="logo paypal">
+                <img src="img/visa.png" alt="logo visa">
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

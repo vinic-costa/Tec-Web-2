@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+     <head>
+     <title>Home</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+	   <script src="js/script.js"></script>
+     <script src="js/camera.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+    <!--<![endif]--> 
+     <!-- font-awesome font -->
+    <link rel="stylesheet" href="./css/styleproduct.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <!-- end font-awesome font -->
+      <script>
+        jQuery
+        $(window).load(function(){
+            jQuery('#camera').camera({
+
+                loader: true,
+                pagination: false,
+                thumbnails: false,
+                transPeriod: 2000, 
+                height: '39.9%',
+                caption: false,
+                navigation: false,
+                fx: 'simpleFade',
+                autoAdvance: true
+
+            });
+
+            $('.block_1 .button1').hover(function()
+                {
+                    $(this).parent().find('.block_num').animate({'color':'#fff'});
+                    $(this).parent().find('h5').animate({'color':'#eada51'});
+                    $(this).parent().find('p').animate({'color':'#fff'});          
+                }, function(){
+                    $(this).parent().find('.block_num').animate({'color':'#4c4b4b'});
+                    $(this).parent().find('h5').animate({'color':'#fff'});
+                    $(this).parent().find('p').animate({'color':'#4c4b4b'});
+                });
+
+             $('.block_3 .button1').hover(function()
+                {
+                    $(this).parent().find('.block_letter').animate({'color':'#fff'});
+                    $(this).parent().parent().find('.icon').animate({'backgroundColor':'#eada51'});
+                    $(this).parent().parent().find('.icon div').animate({'color':'#fff'});          
+                }, function(){
+                    $(this).parent().find('.block_letter').animate({'color':'#4c4b4b'});
+                    $(this).parent().parent().find('.icon').animate({'backgroundColor':'#1f1f1f'});
+                    $(this).parent().parent().find('.icon div').animate({'color':'#4c4b4b'});
+                })
+
+        });     
+        jQuery(function(){
+            $().UItoTop({ easingType: 'easeOutQuart' });
+            $(".top_arr").click(function(){
+                $('body, html').stop().animate({'scrollTop': 0}); 
+            });
+        });     
+    </script>
+     <!--<![endif]-->
+     <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/img/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+   		<script src="js/html5shiv.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+     </head>
+     <body>
+<!--==============================header=================================-->
+<header>
+  <div class="banner-topo">
+    <img name="slide" style="height:600px; width: 100%;">
+      </div>
+      <a class="prev" onClick="prevImg()">&#10094;</a>
+      <a class="next" onClick="nextImg()">&#10095;</a>
+      <br/>
+        <div class="logoHolder">
+            <div class="container_12">
+                <div class="grid_12 text_center marg_1">
+                    <h1><a class="logo" href="index.html"><img src="img/logo.png" alt=""></a> </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container_12">
+        <div class="grid_12">
+            <div class="menuHolder">
+                <nav>
+                    <ul class="sf-menu">
+                        <li class="current"><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a>
+                        </li>
+                        <li><a href="depoimentos.html">Depoimentos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--=======content================================-->
+<section id="content">
+    <div class="container_12">
+        <section id ="products">
+            <div class="product-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <img src="./img/produto1.jpg" alt="Produto 1">
+                        <img src="./img/produto2.jpg" alt="Produto 2">
+                        <img src="./img/produto3.jpg" alt="Produto 3">
+                    </div>
+                    <button class="carousel-control prev">&#10094;</button>
+                    <button class="carousel-control next">&#10095;</button>
+              </div>
+        </section>
+    </div>
+    <div class="container_12">
+        <div class="grid_12">
+            <h3 class="marg_5 corr_01">Últimas avaliações dos ítens</h3>
+        </div>
+    </div>
+    <section id="ultimas-avaliacoes">
+
+        <section id="avaliacoes">
+          <article class="card-avaliacao">
+            <div class="informacoes">
+              <figure>
+                <img
+                  src="./img/cliente2.jpg"
+                  alt="Foto do Avaliador"
+                />
+              </figure>
+
+              <h3>Joelton Silveira</h3>
+            </div>
+
+            <div class="avaliacao">
+              <p>
+                <strong>Avaliação: </strong>
+                Adorei os produtos! A qualidade é incrível e o atendimento é excelente.
+              </p>
+            </div>
+
+            <div class="nota-data">
+              <div class="nota">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="data">
+                <span> 20/02/2024 </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-avaliacao">
+            <div class="informacoes">
+              <figure>
+                <img
+                  src="./img/cliente1.jpg"
+                  alt="Foto do Avaliador"
+                />
+              </figure>
+
+              <h3>Rafael Oliveira</h3>
+            </div>
+
+            <div class="avaliacao">
+              <p>
+                <strong>Avaliação: </strong>
+                Nunca vi nada igual! Recomendo a todos os meus amigos.
+              </p>
+            </div>
+
+            <div class="nota-data">
+              <div class="nota">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+              </div>
+              <div class="data">
+                <span> 07/01/2024 </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card-avaliacao">
+            <div class="informacoes">
+              <figure>
+                <img
+                  src="./img/cliente3.jpg"
+                  alt="Foto do Avaliador"
+                />
+              </figure>
+
+              <h3>Vinicius Namikaze</h3>
+            </div>
+
+            <div class="avaliacao">
+              <p>
+                <strong>Avaliação: </strong>
+                É muito empolgante ver preços muito baixos e tanta variedade!! 
+              </p>
+            </div>
+
+            <div class="nota-data">
+              <div class="nota">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <i class="fa-sharp fa-solid fa-star"></i>
+              </div>
+              <div class="data">
+                <span> 28/11/2023 </span>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <div id="botao-carregar-avaliacoes">
+          <button>
+            <i class="fa-solid fa-plus"></i>
+            Carregar mais avaliações
+          </button>
+        </div>
+      </section>
+</section>
+<!--=======footer=================================-->
+<footer>
+  <div class="container-footer">
+      <div class="footer">
+          <div class="option">
+              <ul>
+                  <strong><h3><li><a href="#">Geek Center Sobral</a></li></h3></strong>
+                  <li><a href="#">Contato</a></li>
+                  <li><a href="#">Termos de serviço</a></li>
+                  <li><a href="#">Política de privacidade</a></li>
+                  <li><a href="#">Cancelamento, troca e rembolso</a></li>
+              </ul>
+          </div>
+          <div class="newsletter">
+              <p>Newsletter</p>
+                  <input type="text" placeholder="Digite seu melhor e-mail"><button
+                      type="submit">Inscrever</button>
+          </div>
+      </div>
+      <div style="border-bottom: 1px solid #A5A1A1;"></div>
+      <div class="informations">
+          <div class="rede-social">
+              <img src="img/instagram.png" alt="logo instagram">
+              <img src="img/facebook.png" alt="logo facebook">
+          </div>
+          <div class="buy">
+              <img src="img/mastercard.png" alt="logo mastercard">
+              <img src="img/paypal.png" alt="logo paypal">
+              <img src="img/visa.png" alt="logo visa">
+          </div>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
